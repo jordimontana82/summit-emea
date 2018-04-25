@@ -8,6 +8,11 @@ namespace SummitEmea.Shared.Models
     {
         public bool Succeeded { get; set; }
         public string ErrorMessage { get; set; }
+
+        public static GenericResult Succeed()
+        {
+            return new GenericResult() { Succeeded = true };
+        } 
     }
 
 

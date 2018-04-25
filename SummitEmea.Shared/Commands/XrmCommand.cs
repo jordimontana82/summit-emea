@@ -10,7 +10,25 @@ namespace SummitEmea.Shared.Commands
     {
         public GenericResult Execute(IOrganizationService service)
         {
+            try
+            {
+                return ConcreteExecute(service); 
+            }
+            catch (Exception e)
+            {
+                return new GenericResult()
+                {
+                    Succeeded = false,
+                    ErrorMessage = e.ToString()
+                };
+            }
+        }
+
+
+        protected virtual GenericResult ConcreteExecute(IOrganizationService service)
+        {
             throw new NotImplementedException();
         }
+
     }
 }

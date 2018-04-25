@@ -13,7 +13,7 @@ namespace SummitEmea.Shared.Commands.PhoneCallHistoryCommands
     {
         public PhoneCall PhoneCall { get; set; }
 
-        public GenericResult Execute(IOrganizationService service)
+        protected override GenericResult ConcreteExecute(IOrganizationService service)
         {
 
                 var contact = PhoneCall.RegardingObjectId;
@@ -45,9 +45,9 @@ namespace SummitEmea.Shared.Commands.PhoneCallHistoryCommands
                     
                 }
 
-            return new GenericResult();
+            return GenericResult.Succeed();
                     
-            }
+        }
         
     }
 }

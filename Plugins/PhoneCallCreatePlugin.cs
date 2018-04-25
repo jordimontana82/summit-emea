@@ -38,7 +38,10 @@ namespace SummitEmea.Plugins
                 };
 
                 var result = cmd.Execute(service);
-                
+                if(!result.Succeeded)
+                {
+                    throw new InvalidPluginExecutionException(result.ErrorMessage);
+                }
             }
         }
     }
