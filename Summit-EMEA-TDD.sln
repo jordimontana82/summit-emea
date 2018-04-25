@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummitEmea.Plugins", "Plugins\SummitEmea.Plugins.csproj", "{3E8DEE4C-61C2-41D8-9D4A-FCC2C53A6005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummitEmea.TypedEntities", "SummitEmea.TypedEntities\SummitEmea.TypedEntities.csproj", "{FF6BFD0B-EE68-4B34-AFA0-387CD3C3B12C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SummitEmea.Shared", "SummitEmea.Shared\SummitEmea.Shared.shproj", "{4DC2B6E3-ABD5-4061-AC28-3366BB8DD67A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummitEmea.UnitTests", "SummitEmea.UnitTests\SummitEmea.UnitTests.csproj", "{981E3733-CA03-4167-B7AE-9639A6AAB411}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SummitEmea.Shared\SummitEmea.Shared.projitems*{3e8dee4c-61c2-41d8-9d4a-fcc2c53a6005}*SharedItemsImports = 4
+		SummitEmea.Shared\SummitEmea.Shared.projitems*{4dc2b6e3-abd5-4061-ac28-3366bb8dd67a}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E8DEE4C-61C2-41D8-9D4A-FCC2C53A6005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8DEE4C-61C2-41D8-9D4A-FCC2C53A6005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8DEE4C-61C2-41D8-9D4A-FCC2C53A6005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8DEE4C-61C2-41D8-9D4A-FCC2C53A6005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6BFD0B-EE68-4B34-AFA0-387CD3C3B12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6BFD0B-EE68-4B34-AFA0-387CD3C3B12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6BFD0B-EE68-4B34-AFA0-387CD3C3B12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6BFD0B-EE68-4B34-AFA0-387CD3C3B12C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981E3733-CA03-4167-B7AE-9639A6AAB411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981E3733-CA03-4167-B7AE-9639A6AAB411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981E3733-CA03-4167-B7AE-9639A6AAB411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981E3733-CA03-4167-B7AE-9639A6AAB411}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13430A5B-E60E-4910-BBB6-568E558FB57D}
+	EndGlobalSection
+EndGlobal
