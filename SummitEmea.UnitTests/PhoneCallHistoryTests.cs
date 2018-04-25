@@ -36,7 +36,7 @@ namespace SummitEmea.UnitTests
             ctx.ExecutePluginWithTarget<PhoneCallCreatePlugin>(phoneCall);
 
             var historyRecords = ctx.CreateQuery<ultra_phonecallhistory>().ToList();
-            Assert.Equal(1, historyRecords.Count);
+            Assert.Single(historyRecords);
 
             var historyRecord = historyRecords.First();
             Assert.Equal(phoneCall.PhoneNumber, historyRecord.ultra_phonenumber);
@@ -72,5 +72,7 @@ namespace SummitEmea.UnitTests
             var historyRecords = ctx.CreateQuery<ultra_phonecallhistory>().ToList();
             Assert.Single(historyRecords);
         }
+
+
     }
 }
